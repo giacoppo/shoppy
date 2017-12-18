@@ -1,0 +1,86 @@
+.navbar-brand {
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    background: lightblue;
+    border-radius: 50% !important;
+    padding: 90px 0 40px 100px;
+    transform: rotate(-20deg);
+    position: relative;
+    left: -105px;
+    top: -70px;
+}
+
+.navbar-brand h1 {
+    position: relative;
+    left: -1200px;
+    width: 0;
+    height: 0;
+    margin: 0;
+}
+
+.navbar-brand img {
+    max-width: 80%;
+    transform: rotate(20deg);
+}
+
+.navbar-light .navbar-toggler {
+    margin-top: -90px;
+}
+
+.navbar-light .navbar-toggler:hover {
+    cursor: pointer;
+    color: rgba(0,0,0,1.0);
+    border-color: rgba(0,0,0,.5);
+}
+
+.album {
+    background: aliceblue;
+}
+
+.album-back {
+    background: white;
+}
+
+div#menuCollapse {
+    max-width: 100%;
+}
+
+main .navbar {
+    display: flow-root;
+}
+
+.card {
+    border: 0 none;
+    border-radius: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.footer {
+    background: lightblue;
+}
+
+
+@media (min-width: 768px) {
+    div#navbarCollapse {
+        margin-top: -80px;
+        margin-left: -90px;
+    }
+    main .navbar-expand-md .navbar-nav {
+        -ms-flex-direction: row;
+        flex-direction: column;
+    }
+    main .navbar-expand-md .navbar-collapse {
+        display: inline-block !important;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        max-width: 320px;
+    }
+    div#menuCollapse {
+        max-width: 100%;
+        padding: 10px 15px 15px 0;
+    }
+}
