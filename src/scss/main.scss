@@ -1,0 +1,27 @@
+main {
+    .album {
+        background: aliceblue;
+        .navbar {
+            display: flow-root;
+                .navbar-toggler {
+                &:hover {
+                    cursor: pointer;
+                    color: rgba(0,0,0,1.0);
+                    border-color: rgba(0,0,0,.5);
+                }
+            }
+            div#menuCollapse {
+                max-width: 100%;
+            }
+        }
+        .album-back {
+            background: white;
+            .card {
+                border: 0 none;
+                border-radius: 0;
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        }
+    }
+}
