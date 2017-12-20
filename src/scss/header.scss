@@ -1,4 +1,10 @@
 header {
+    .navbar {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        padding: .5rem 1rem;
+    }
     nav.navbar-light {
         .navbar-brand {
             padding-top: .3125rem;
