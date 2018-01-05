@@ -17,9 +17,11 @@ var size        = require('gulp-size'); // Get the size of the project
 var jshint      = require('gulp-jshint'); // Debug JS files
 var stylish     = require('jshint-stylish'); // More stylish debugging
 
+
+
 // Compile sass into CSS & auto-inject into browsers
 gulp.task('sass', function() {
-   return gulp.src(['src/scss/*.scss'])
+   return gulp.src(['node_modules/bootstrap/scss/bootstrap.scss','node_modules/bootstrap/scss/_custom.scss','src/scss/*.scss'])
         .pipe(sass().on('error', sass.logError))
         .pipe(concat('style.css'))
         .pipe(minifyCSS())
@@ -28,6 +30,9 @@ gulp.task('sass', function() {
             stream: true,
         }));
 });
+
+// Customize bootstrap 4's Sass files
+
 
 // Move the javascript files into our /src/js folder
 gulp.task('js', function() {
@@ -48,7 +53,7 @@ gulp.task('serve', ['sass'], function() {
         server: "./src"  
     });
 
-    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'src/scss/*.scss'], ['sass']);
+    gulp.watch(['node_modules/bootstrap/scss/bootstrap.scss', 'node_modules/bootstrap/scss/_custom.scss', 'src/scss/*.scss'], ['sass']);
     gulp.watch("src/*.html").on('change', browserSync.reload);
 });
 

@@ -21,7 +21,8 @@
   },
   "homepage": "https://github.com/giacoppo/shoppy#readme",
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6"
+    "bootstrap": "^4.0.0-alpha.6",
+    "tether": "^1.4.3"
   },
   "devDependencies": {
     "browser-sync": "^2.18.13",

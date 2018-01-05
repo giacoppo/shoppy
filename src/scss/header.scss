@@ -27,15 +27,25 @@ header {
                 max-width: 80%;
                 transform: rotate(20deg);
             }
+            @media (max-width: 767px) {
+                max-width: 320px;
+            }
         }
         .navbar-toggler {
             position: absolute;
             top: 20px;
             right: 20px;
+            outline: 0;
             &:hover {
                 cursor: pointer;
                 color: rgba(0,0,0,1.0);
                 border-color: rgba(0,0,0,.5);
+            }
+        }
+        @media (min-width: 768px) {
+            div#navbarCollapse {
+                margin-top: -80px;
+                margin-left: -90px;
             }
         }
     }
